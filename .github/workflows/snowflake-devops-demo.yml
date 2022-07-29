@@ -32,7 +32,7 @@ jobs:
           AZURE_SF_ROLE: ${{ secrets.AZURE_SF_ROLE }}
           AZURE_SF_WAREHOUSE: ${{ secrets.AZURE_SF_WAREHOUSE }}
           AZURE_SF_DATABASE: ${{ secrets.AZURE_SF_DATABASE }}
-          AZURE_SF_PASSWORD: ${{ secrets.AZURE_SF_PASSWORD }}
+          SNOWFLAKE_PASSWORD: ${{ secrets.AZURE_SF_PASSWORD }}
         run: |
           echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
           python --version
