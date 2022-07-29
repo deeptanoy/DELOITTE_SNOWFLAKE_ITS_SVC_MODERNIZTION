@@ -27,12 +27,12 @@ jobs:
 
       - name: Run schemachange
         env:
-          SF_ACCOUNT: ${{ secrets.SF_ACCOUNT }}
-          SF_USERNAME: ${{ secrets.SF_USERNAME }}
-          SF_ROLE: ${{ secrets.SF_ROLE }}
-          SF_WAREHOUSE: ${{ secrets.SF_WAREHOUSE }}
-          SF_DATABASE: ${{ secrets.SF_DATABASE }}
-          SNOWFLAKE_PASSWORD: ${{ secrets.SF_PASSWORD }}
+          AZURE_SF_ACCOUNT: ${{ secrets.AZURE_SF_ACCOUNT }}
+          AZURE_SF_USERNAME: ${{ secrets.AZURE_SF_USERNAME }}
+          AZURE_SF_ROLE: ${{ secrets.AZURE_SF_ROLE }}
+          AZURE_SF_WAREHOUSE: ${{ secrets.AZURE_SF_WAREHOUSE }}
+          AZURE_SF_DATABASE: ${{ secrets.AZURE_SF_DATABASE }}
+          AZURE_SNOWFLAKE_PASSWORD: ${{ secrets.AZURE_SF_PASSWORD }}
         run: |
           echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
           python --version
@@ -40,4 +40,4 @@ jobs:
           pip install schemachange
           
           echo "Step 2: Running schemachange"
-          schemachange -f $GITHUB_WORKSPACE/Scripts -a $SF_ACCOUNT -u $SF_USERNAME -r $SF_ROLE -w $SF_WAREHOUSE -d $SF_DATABASE -c $SF_DATABASE.SCHEMACHANGE.CHANGE_HISTORY --create-change-history-table
+          schemachange -f $GITHUB_WORKSPACE/Scripts -a $AZURE_SF_ACCOUNT -u $AZURE_SF_USERNAME -r $AZURE_SF_ROLE -w $AZURE_SF_WAREHOUSE -d $AZURE_SF_DATABASE -c $AZURE_SF_DATABASE.SCHEMACHANGE.CHANGE_HISTORY --create-change-history-table
