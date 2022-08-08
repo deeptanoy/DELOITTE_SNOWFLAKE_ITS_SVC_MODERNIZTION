@@ -5,6 +5,8 @@ on:
   push:
     paths-ignore:
     - 'Scripts/**'
+    - 'Scripts/Stored Proc/**'
+
     branches:
       - SM_BETA
 
