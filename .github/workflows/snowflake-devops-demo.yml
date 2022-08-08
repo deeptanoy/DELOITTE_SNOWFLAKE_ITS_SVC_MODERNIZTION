@@ -40,4 +40,4 @@ jobs:
           pip install schemachange
           
           echo "Step 2: Running schemachange"
-          schemachange -f $GITHUB_WORKSPACE/Scripts/** -a $AZURE_SF_ACCOUNT -u $AZURE_SF_USERNAME -r $AZURE_SF_ROLE -w $AZURE_SF_WAREHOUSE -d $AZURE_SF_DATABASE -c $AZURE_SF_DATABASE.SCHEMACHANGE.CHANGE_HISTORY --create-change-history-table
+          schemachange -f $GITHUB_WORKSPACE/Scripts** -a $AZURE_SF_ACCOUNT -u $AZURE_SF_USERNAME -r $AZURE_SF_ROLE -w $AZURE_SF_WAREHOUSE -d $AZURE_SF_DATABASE -c $AZURE_SF_DATABASE.SCHEMACHANGE.CHANGE_HISTORY --create-change-history-table
