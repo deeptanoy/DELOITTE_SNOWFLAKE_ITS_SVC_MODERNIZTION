@@ -12,3 +12,5 @@ values ('f','g');
 
 insert into SNOWFLAKE_CI_CD_POC.CI_CD_DEMO.CUSTOM (JOB_NM,CREATED_BY)
 values ('iii','hhh');
+insert into SNOWFLAKE_CI_CD_POC.CI_CD_DEMO.CUSTOM (JOB_NM,CREATED_BY)
+values ('kkkk','hhh');
