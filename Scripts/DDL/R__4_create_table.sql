@@ -1,0 +1,1 @@
+create table  SNOWFLAKE_CI_CD_POC.CI_CD_DEMO.demo_test as select * from SNOWFLAKE_CI_CD_POC.CI_CD_DEMO.CICD_VIEW;
