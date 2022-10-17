@@ -1,1 +1,0 @@
-create table SNOWFLAKE_CI_CD_POC.CI_CD_DEMO.deeptanoy1 (NAME VARCHAR,ID INTEGER) ;
