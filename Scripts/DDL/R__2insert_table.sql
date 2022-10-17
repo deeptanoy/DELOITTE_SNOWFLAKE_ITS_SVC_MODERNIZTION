@@ -1,1 +1,0 @@
-insert into SNOWFLAKE_CI_CD_POC.CI_CD_DEMO.SNOWFLAKE_CI_CD_CUSTOM (NAME,ID ) values ('abc',1);
