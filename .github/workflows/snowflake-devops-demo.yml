@@ -8,7 +8,7 @@ on:
     - 'Scripts/Stored Proc/**'
     - 'Scripts/Inserts/**'
     branches:
-      - Deloitte_AWS
+      - Deloitte_DEV
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
