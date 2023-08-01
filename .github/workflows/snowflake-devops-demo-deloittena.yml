@@ -35,7 +35,7 @@ jobs:
           DELOITTENA_ROLE: ${{ secrets.DELOITTENA_ROLE }}
           DELOITTENA_WAREHOUSE: ${{ secrets.DELOITTENA_WAREHOUSE }}
           DELOITTENA_DATABASE: ${{ secrets.DELOITTENA_DATABASE }}
-          DELOITTENA_PASSWORD: ${{ secrets.DELOITTENA_PASSWORD }}
+          SNOWFLAKE_PASSWORD: ${{ secrets.DELOITTENA_PASSWORD }}
         run: |
           echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
           python --version
