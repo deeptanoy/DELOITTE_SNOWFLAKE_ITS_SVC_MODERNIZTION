@@ -4,7 +4,7 @@ name: snowflake-devops-demo-dev
 on:
   push:
     paths-ignore:
-    - 'Scripts/Inserts/**'
+    - 'GCP/**'
     branches:
       - Deloitte_DEV
 
