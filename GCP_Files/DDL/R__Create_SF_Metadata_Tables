@@ -6,7 +6,6 @@
 --AUTO_SUSPEND = 300 AUTO_RESUME = TRUE MIN_CLUSTER_COUNT = 1 MAX_CLUSTER_COUNT = 1 SCALING_POLICY = 'ECONOMY';
 --
 --grant monitor, operate, usage on warehouse SF_SANDBOX_WH to role "SF_SANDBOX_ROLE";
---
 --GRANT USAGE ON DATABASE SF_SANDBOX_DB TO ROLE SF_SANDBOX_ROLE;
 --grant create schema on database SF_SANDBOX_DB  to role SF_SANDBOX_ROLE;
 --
